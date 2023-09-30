@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  background-image: url("https://wallpapertag.com/wallpaper/full/a/8/d/34170-full-size-website-background-2560x1600-for-tablet.jpg");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+}
+
+.navbar span {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+.skyBlue {
+  color: rgb(148, 148, 148);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .hamburger {
+  display: none;
+}
+
+.lists {
+  display: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #adadad;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar ul li a:hover {
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 900px) {
+  .navbar ul {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: block;
+    font-size: 25px;
+    color: rgb(124, 124, 124);
+    cursor: pointer;
+  }
+  .navbar .lists ul {
+    display: block;
+  }
+  .navbar .lists {
+    display: none;
+    top: 0;
+    background-color: gray;
+    width: 50%;
+    z-index: 200;
+    padding: 15px 10px;
+    position: absolute;
+    right: -50%;
+    transition: all 1s;
+  }
+  .navbar ul li a {
+    color: #fff8f8;
+  }
+  .navbar .items li {
+    transition: all 0.3s;
+  }
+  .navbar .items li:hover {
+    transform: translateX(10px);
+  }
+  .navbar .items li a:hover {
+    text-shadow: 0 0 5px black;
+  }
+  #cross {
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    list-style: none;
+  }
+  #menuLists.active {
+    right: 0;
+    display: block;
+    transition-duration: 0.7s ease;
+  }
+  .navbar .lists ul li {
+    margin: 20px 0;
+  }
+}
+
+.hero {
+  justify-content: space-between;
+  height: 67vh;
+  width: 100%;
+  text-transform: capitalize;
+  padding-top: 7em;
+  display: flex;
+  transition-duration: 0.8s;
+}
+
+.hero-1 {
+  width: 50%;
+  margin-left: 17px;
+  margin-top: 10px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  margin-left: 15px;
+  padding-top: 35px;
+}
+
+.hero h2 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.hero h4 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    padding-top: 150px;
+    text-align: center;
+    margin: -26px;
+    flex-direction: column;
+  }
+  .hero-1,
+  h1,
+  h2,
+  h4 {
+    width: 100vw;
+    font-size: 15px;
+  }
+}
+
+.icon-container {
+  margin-left: 0px;
+}
+
+.icons {
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.icons:hover {
+  cursor: pointer;
+  background-blend-mode: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.about {
+  width: 45%;
+  padding-top: 10px;
+}
+
+.about h4 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .about h4 {
+    width: 100vw;
+    font-size: 15px;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-h2 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-block: 10px;
+}
+.ra {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+}
+
+.skills .range {
+  width: 240px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.r {
+  justify-content: space-evenly;
+  display: flex;
+  margin-block: 5px;
+}
+
+.r label {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .skills {
+    margin-top: 55px;
+  }
+
+  .ra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 5px;
+  }
+
+  .skills .range {
+    width: 70%;
+    margin-block: 15px;
+  }
+}

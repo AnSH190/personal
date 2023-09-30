@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima&family=Raleway:wght@100;300;400&family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h2 class="heading">
+        <span>.Ankush</span>
+        <span class="skyBlue">Vaswani.</span>
+      </h2>
+      <ul>
+        <li onclick="reloadPageTimeout()"><a href="#">Home</a></li>
+        <li>
+          <a href="https://github.com/AnSH190" target="_blank">Git Hub</a>
+        </li>
+        <li>
+          <a href="www.linkedin.com/in/ankush-vaswani-338aa1269">LinkeDIn</a>
+        </li>
+        <li>
+          <a href="https://linktr.ee/ankush_vaswani" target="_blank">Contact</a>
+        </li>
+      </ul>
+      <ul class="hamburger" id="menuBar">
+        <li><i class="fa-solid fa-bars"></i></li>
+      </ul>
+      <div class="lists" id="menuLists">
+        <li id="cross"><i class="fa-solid fa-xmark"></i></li>
+        <ul class="items">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="https://github.com/AnSH190" target="_blank">Git Hub</a>
+          </li>
+          <li>
+            <a
+              href="www.linkedin.com/in/ankush-vaswani-338aa1269"
+              target="_blank"
+              >LinkeDIn</a
+            >
+          </li>
+          <li>
+            <a href="https://linktr.ee/ankush_vaswani" target="_blank"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-1">
+        <h1>hi! I am Ankush Vaswani</h1>
+        <h2>I am</h2>
+        <h4><span id="element"></span></h4>
+        <span class="icon-container">
+          <a href="https://linktr.ee/ankush_vaswani" target="_blank">
+            <i
+              class="fa-sharp fa-solid fa-circle-user fa-2xl icons"
+              style="color: #5e5e5e"
+            ></i>
+          </a>
+          <a href="https://github.com/AnSH190" target="_blank">
+            <i
+              class="fa-brands fa-github fa-2xl icons"
+              style="color: #5e5e5e"
+            ></i>
+          </a>
+
+          <a href="https://www.instagram.com/anshh_04_/" target="_blank">
+            <i
+              class="fa-brands fa-instagram fa-2xl icons"
+              style="color: #5e5e5e"
+            ></i>
+          </a>
+          <a
+            href="www.linkedin.com/in/ankush-vaswani-338aa1269"
+            target="_blank"
+          >
+            <i
+              class="fa-brands fa-linkedin fa-2xl icons"
+              style="color: #5e5e5e"
+            ></i>
+          </a>
+        </span>
+      </div>
+
+      <div class="about">
+        <h4>
+          I'm Ankush Vaswani, currently a 3rd-semester BCA student, and I'm
+          passionate about web development. With a solid foundation in HTML,
+          CSS, JavaScript, ReactJS, and Java, I've successfully completed
+          small-scale web projects that showcase my ability to create
+          interactive and user-friendly applications.
+        </h4>
+      </div>
+    </div>
+    <div class="skills">
+      <h2 class="skill-h2">Skills</h2>
+      <div class="ra">
+        <div class="r">
+          <label for="html">HTML-CSS</label>
+          <input
+            type="range"
+            class="range"
+            name="HTML-CSS"
+            id="hc"
+            value="80"
+            disabled
+          />
+        </div>
+        <div class="r">
+          <label for="js">JavaScript</label>
+          <input
+            type="range"
+            class="range"
+            name="js"
+            id="hc"
+            value="60"
+            disabled
+          />
+        </div>
+        <div class="r">
+          <label for="rjs">React js</label>
+          <input
+            type="range"
+            class="range"
+            name="rjs"
+            id="hc"
+            value="60"
+            disabled
+          />
+        </div>
+        <div class="r">
+          <label for="java">Java</label>
+          <input
+            type="range"
+            class="range"
+            name="java"
+            id="hc"
+            value="70"
+            disabled
+          />
+        </div>
+        <div class="r">
+          <label for="rjs">Backend</label>
+          <input
+            type="range"
+            class="range"
+            name="rjs"
+            id="hc"
+            value="40"
+            disabled
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web designer",
+          "Data analyst",
+          "Digital marketer",
+          "Full Stack Web devloper  ",
+        ],
+        loopCount: Infinity,
+        typeSpeed: 70,
+      });
+    </script>
+  </body>
+
+  <script src="nav.js"></script>
+</html>
